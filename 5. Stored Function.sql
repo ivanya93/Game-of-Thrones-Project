@@ -4,12 +4,12 @@
 
 USE GOT;
 
--- Check if a contendent to the Iron Throne is alegiable to win the crone
+-- Check if a contendent to the Iron Throne is alegiable to win the crown
 -- And say 'Yes' or 'Not'
 
 -- -- Who was the older character in GOT?
 SELECT 
-	name, 
+    name, 
     age
 FROM got_characters
 WHERE age >= 100
