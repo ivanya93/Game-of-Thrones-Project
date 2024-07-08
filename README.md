@@ -1,11 +1,12 @@
 Game of Thrones SQL Database Project
 
-Overview
+Overview:
 This project was completed as part of the Code First Girls SQL Certification course. The primary objective was to create a database from scratch using MySQL and Kaggle datasets. The project aimed to demonstrate proficiency in SQL through the creation and manipulation of database structures, including tables, views, joins, subqueries, stored procedures, functions, triggers, and events.
 
 Project Details:
 Course: Code First Girls SQL Certification
-Tools Used: MySQL, Excel, Kaggle, Tableu
+Tools Used: MySQL, Excel, Kaggle, Tableu.
+
 Project Theme: Game of Thrones
 
 Datasets
@@ -23,13 +24,12 @@ Key Features
 - Data Type Changes: Modified data types to ensure optimal storage and data integrity.
 
 Highlights
-Fun and Engaging Theme: Leveraged my passion for Game of Thrones to create a fun and engaging project.
-Data Insights: Discovered interesting facts such as the faction that lost the most men during the War of the Five Kings.
+- Fun and Engaging Theme: Leveraged my passion for Game of Thrones to create a fun and engaging project.
+- Data Insights: Discovered interesting facts such as the faction that lost the most men during the War of the Five Kings.
 
 Getting Started
 To run this project, you'll need MySQL installed on your machine. Follow these steps:
-
-Clone the Repository:
+- Clone the Repository:
 bash
 Copy code
 git clone [repository-url]
@@ -48,26 +48,20 @@ Use your preferred MySQL client (e.g., MySQL Workbench) to explore the tables, v
 Usage
 Below are some example queries you can run to interact with the database:
 
-Find the faction that lost the most men during the War of the Five Kings:
-sql
-Copy code
+- Find the faction that lost the most men during the War of the Five Kings:
 SELECT faction_name, SUM(losses) AS total_losses
 FROM battle_data
 WHERE war_name = 'War of the Five Kings'
 GROUP BY faction_name
 ORDER BY total_losses DESC
 LIMIT 1;
-View all battles involving House Stark:
 
-sql
-Copy code
+- View all battles involving House Stark:
 CREATE VIEW stark_battles AS
 SELECT * FROM battle_data
 WHERE faction1 = 'House Stark' OR faction2 = 'House Stark';
-Calculate the total number of battles fought:
 
-sql
-Copy code
+- Calculate the total number of battles fought:
 SELECT COUNT(*) AS total_battles
 FROM battle_data;
 Contributing
