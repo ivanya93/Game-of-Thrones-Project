@@ -1,3 +1,5 @@
+-- Data types conversion and casting
+
 -- ------------ UPDATE ---------------------------------------------------------------------------------
 UPDATE 
 	got_characters
