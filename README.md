@@ -45,7 +45,7 @@ mysql -u username -p database_name < got_database.sql
 Explore the Database:
 Use your preferred MySQL client (e.g., MySQL Workbench) to explore the tables, views, stored procedures, functions, triggers, and events.
 
-Usage
+Usage:
 Below are some example queries you can run to interact with the database:
 
 - Find the faction that lost the most men during the War of the Five Kings:
@@ -67,9 +67,6 @@ FROM battle_data;
 Contributing
 
 This project is open to contributions. Feel free to fork the repository and submit pull requests with improvements or additional features.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Acknowledgements
 Code First Girls: For providing the course and guidance.
